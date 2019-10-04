@@ -1,0 +1,54 @@
+/* This ensures every single element has its content
+   centered either horizontally and vertically */
+body * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+#container {
+    background-color: LightBlue;
+    flex-flow: wrap;
+}
+
+header {
+    flex-basis: 100%;
+    background-color: red;
+}
+
+footer {
+    flex-basis: 100%;
+    background-color: blueviolet;
+}
+
+main {
+    flex-grow: 2;
+    flex-flow: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+aside {
+    flex-grow: 1;
+    align-self: stretch;
+    background-color: yellow;
+}
+
+.box {
+    flex-grow: 1;
+}
+
+.box:nth-of-type(1){
+    background-color: blue;
+}
+
+.box:nth-of-type(2){
+    background-color: green;
+}
+
+article {
+    flex-basis: 100%;
+    background-color: orange;
+}
